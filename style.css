@@ -1,0 +1,72 @@
+body {
+    background-color: paleturquoise;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+}
+
+p {
+    font-family: serif;
+}
+
+
+.result_radius {
+    align-items: center;
+    display: flex;
+}
+
+.result_radius h3 {
+    margin: 10px;
+}
+
+#countLabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#counterDIV {
+    display: block;
+    text-align: center;
+
+}
+
+.counterBUTTONS {
+    /* height: 40px;
+    width: 200px; */
+    background-color: rgb(78, 78, 170);
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px black;
+    transition: background-color 0.25s;
+
+}
+
+.counterBUTTONS:hover {
+    background-color: rgb(15, 15, 165);
+}
+
+li {
+    padding: 10px;
+}
+
+#randomBTN {
+    /* height: 40px;
+    width: 200px; */
+    background-color: rgb(78, 78, 170);
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px black;
+    transition: background-color 0.25s;
+
+}
+
+#randomLabel {
+    font-size: 3em;
+}

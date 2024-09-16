@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14 String Methods </title>
+    <link rel="stylesheet" href="style_lessons.css">
+</head>
+<body>
+    <script>
+        let username = "Ichibin";
+        console.log(username.charAt(2)); 
+        console.log(username.indexOf('c'));
+        console.log(username.length);
+        console.log(username.startsWith('w'));
+
+        if(username.startsWith(' ')){
+            console.log('Your username cant begin with an space')
+        }
+        else{
+            console.log(username);
+        }
+
+        let phonenumber='318-5640-864';
+        phonenumber = phonenumber.replaceAll("-",'');
+        console.log(phonenumber)
+        let phone_2 = '318-5640-864';
+        phone_2 = phone_2.padEnd(15,'0');
+        console.log(phone_2)
+        console.log('-----------------------------')
+
+    </script>
+    <script>
+        console.log('String Slicing');
+        const fullName = 'Ernesto Saavedra';
+        let firstName = fullName.slice(0,fullName.indexOf(' '));
+        let lastName = fullName.slice(fullName.indexOf(' ')+1,fullName.length)
+        console.log(firstName);
+        console.log(lastName);
+    </script>
+</body>
+</html>

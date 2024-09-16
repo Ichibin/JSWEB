@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While loop</title>
+</head>
+<body>
+    <h1>While loop</h1>
+    <p id="p"></p>
+    <script>
+
+        let counter = 0 ;
+        while(counter <= 10){
+            console.log(counter);
+            counter++;
+        }
+
+
+        let username = ""; 
+        while(username === "" || username === null ){
+            username  = window.prompt('Enter Your username');
+        }
+        document.getElementById('p').textContent = `Hi ${username}`;
+    </script>
+</body>
+</html>

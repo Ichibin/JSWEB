@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.</title>
+    <link rel="stylesheet" href="style_lessons.css">
+</head>
+
+<body>
+    <h1>Checked Property </h1>
+    <div id="cardid">
+
+        <input type="checkbox" id="myCheckbox" name="card">
+        <label for=" myCheckbox" class="cardsbtns">Subscribe</label><br>
+
+        <input type="radio" id="visabtn" name="card ">
+        <label for=" visabtn" class="cardsbtns">Visa</label> <br>
+
+        <input type="radio" id="masterbnt" name="card ">
+        <label for=" masterbtn" class="cardsbtns">MasterCard</label><br>
+
+        <input type="radio" id="paypalbtn" name="card ">
+        <label for=" paypalbtn" class="cardsbtns">PayPal</label><br>
+
+
+
+    </div>
+    <hr>
+    <button type="submit" id="submitbtn">Submit</button><br>
+    <p id="subresult"></p>
+    <p id="paymentresutl"></p>
+
+    <script>
+        const subscribed = document.getElementById("myCheckbox");
+        const visabtn = document.getElementById("visabtn");
+        const masterbnt = document.getElementById("masterbnt");
+        const paypalbtn = document.getElementById("paypalbtn");
+
+
+        const submit = document.getElementById("submitbtn");
+        const p_subresult = document.getElementById("subresult");
+        const p_paymen_result = document.getElementById("paymentresutl");
+
+        submit.onclick = function () {
+            if (subscribed.checked) {
+                p_subresult.textContent = "You are subscribed.";
+            }
+            else {
+                p_subresult.textContent = "You are not subscribed.";
+            }
+
+            if(visabtn.checked){
+                p_paymen_result.textContent="You are paying with Visa"; 
+            }
+            else if(masterbnt.checked) {
+                p_paymen_result.textContent="You are paying with Mastercard"; 
+            }
+            else if(paypalbtn.checked){
+                p_paymen_result.textContent="You are paying with PayPal"; 
+            }
+            else{
+                p_paymen_result.textContent="Please select a Payment Type"; 
+            }
+            let age = 21;
+
+            let message =age >= 18 ? "You're an adult" : "You're a minor"; 
+        }
+    </script>
+
+</body>
+
+</html>

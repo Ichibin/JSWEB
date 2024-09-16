@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(85, 186, 114);
+
+
+}
+
+p {
+    font-family: serif;
+}
+
+#cardid {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%
+}
+
+#submitbtn {
+    font-size: 1.5em;
+    background-color: rgb(64, 47, 107);
+    color: white;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif
+}
