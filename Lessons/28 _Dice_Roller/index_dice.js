@@ -8,6 +8,7 @@ function rollDice(){
     const values = [];
     const images =[];
 
+<<<<<<< HEAD
     // for(let i = 0; i < numDice;i++){
         // const value = Math.floor(Math.random() *6)+1;
         // // console.log(value);
@@ -31,6 +32,15 @@ function rollDice(){
         
 
     // }
+=======
+    for(let i = 0; i < numDice;i++){
+        const value = Math.floor(Math.random() *6)+1;
+        // console.log(value);
+        values.push(value);
+        images.push(`<img src ="Dice_imgs/D${value}.png" alt="Dice Number ${value}">`)
+
+    }
+>>>>>>> b732262a8417f88446951cea68589bfca02acec4
 
     diceResult.textContent = `Dice: ${values.join(', ')}`;
 
